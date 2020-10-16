@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>weshop</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <section class="product">
+        <div class="container">
+            <div class="product__wrapper">
+                <div class="product__way">
+                    <a href="#">Home</a>
+                    <span>/</span>
+                    <a href="#">shop</a>
+                    <span>/</span>
+                    <a href="#">details</a>
+                </div>
+                <h1 class="product__title">product details</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-gray">
+        <div class="container">
+            <section class="commodity">
+                <div class="commodity__photos">
+                    <div class="commodity__photos-item"></div>
+                    <div class="commodity__photos-item"></div>
+                    <div class="commodity__photos-item"></div>
+                    <div class="commodity__photos-item"></div>
+                    <div class="commodity__photos-item"></div>
+                </div>
+                <div class="commodity__info">
+                    <h3 class="commodity__cost">$555</h3>
+                    <h2 class="commodity__name">Star Wars Boys' The Force Awakens Character Match Up T-Shirt</h2>
+                    <p class="commodity__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                    <button class="buttonDefault">Add to cart</button>
+                    <button class="buttonDefault buttonDefault-bc">Add to WISHLIST</button>
+                    <div class="commodity__share">
+                        <span class="commodity__share-title">SHARE</span>
+                        <div class="networks">
+                            <div class="networks__wrapper">
+                                <div class="networks__item">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                                <div class="networks__item">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                                <div class="networks__item">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <div class="networks__item">
+                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="about">
+        <header class="about__header">
+            <div class="container">
+                <div class="about__container">
+                    <ul class="about__list">
+                        <li class="about__category"><a href="#">DESCRIPTION</a></li>
+                        <li class="about__category"><a href="#">history</a></li>
+                        <li class="about__category"><a href="#">history</a></li>
+                        <li class="about__category"><a href="#">history</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="about__container">
+                <section class="about__data">
+                    <div class="about__text-wrapper">
+                        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste.</p>
+                        <br>
+                        <p class="about__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__scale">
+                            <div class="stat__current-scale">
+                                <h2 class="stat__data">Cotton</h2>
+                                <h2 class="stat__data">70%</h2>
+                            </div>
+                        </div>
+                        <div class="stat__scale">
+                            <div class="stat__current-scale">
+                                <h2 class="stat__data">Ulk</h2>
+                                <h2 class="stat__data">50%</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-white">
+        <div class="container">
+            <section class="product-list">
+                <header class="product-list__header product-list__header-details">
+                    <h2 class="product-list__name product-list__name-details">Related items</h2>
+                </header>
+                <div class="product-list__clothes product-list__clothes-slider">
+
+                    <article class="product-list__item">
+                        <div class="product-list__item-wrapper">
+                            <div class="product-list__cart"></div>
+                        </div>
+                    </article>
+
+                    <article class="product-list__item">
+                        <div class="product-list__item-wrapper">
+                            <div class="product-list__cart"></div>
+                        </div>
+                    </article>
+
+                    <article class="product-list__item">
+                        <div class="product-list__item-wrapper">
+                            <div class="product-list__cart"></div>
+                        </div>
+                    </article>
+
+                    <article class="product-list__item">
+                        <div class="product-list__item-wrapper">
+                            <div class="product-list__cart"></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="section section-gray">
+        <div class="container">
+            //- Include logos
+            include ../../#modules/logos.pug
+        </div>
+    </section>
+
+    //- Include footer
+    include ../../#modules/footer.pug
+</body>
+</html>
