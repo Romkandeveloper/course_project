@@ -5,7 +5,8 @@
 @import "../../scss/main";
 
 .product{
-    padding: 200px 0 130px 0;
+    background-image: url(../images/products/product_item/product2.jpg);
+    background-size: cover;
     &__wrapper{
         display: flex;
         flex-direction: column;
@@ -18,6 +19,10 @@
         span{
             margin: 0 5px;
         }
+    }
+    &__back{
+        padding: 200px 0 130px 0;
+        background-color: rgba($color: #000000, $alpha: .85);
     }
     &__title{
         text-align: center;
@@ -129,12 +134,12 @@
     &__photos{
         display: grid;
         grid-gap: 15px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 150px);
+        grid-template-columns: 120px repeat(4, 1fr);
+        grid-template-rows: repeat(3, 170px) 30px;
         &-item{
             &:first-child{
-                grid-row: 1 / 4;
-                grid-column: 1/ -1;
+                grid-row: 1 / -1;
+                grid-column: 2 / -1;
                 position: relative;
                 &::before, &::after{
                     cursor: pointer;
@@ -162,6 +167,11 @@
                 }
             }
             background-color: #fff;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
     .buttonDefault{
