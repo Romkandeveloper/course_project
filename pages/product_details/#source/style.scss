@@ -105,7 +105,18 @@
         flex-grow: 1;
         padding: 0 15px;
     }
-
+    &__arrow{
+        cursor: pointer;
+        img{
+            max-width: 25%;
+            height: auto;
+            margin: 0 auto;
+        }
+        display: flex;
+        align-items: center;
+        vertical-align: center;
+        text-align: center;
+    }
     &__info{
         padding-top: 40px;
         max-width: 50%;
@@ -135,9 +146,19 @@
         display: grid;
         grid-gap: 15px;
         grid-template-columns: 120px repeat(4, 1fr);
-        grid-template-rows: repeat(3, 170px) 30px;
+        grid-template-rows: repeat(3, 170px) 70px;
         &-item{
+            &_active{
+                outline: 1px solid #000000;
+            }
+            padding: 2px;
+            &:hover{
+                outline: 1px solid #e26a9f;
+            }
+            display: block;
             &:first-child{
+                padding: 0;
+                outline: none;
                 grid-row: 1 / -1;
                 grid-column: 2 / -1;
                 position: relative;
@@ -174,20 +195,28 @@
             }
         }
     }
-    .buttonDefault{
-        margin-top: 30px;
-        margin-right: 15px;
-    }
+   
     &__share{
         margin-top: 40px;
         &-title{
             display: inline-block;
-            border-bottom: 2px solid $main-color;
             padding: 8px 0;
             text-transform: uppercase;
             color: #3c4852;
             font-size: 14px;
             font-weight: 300;
+            position: relative;
+            &::after{
+                content:"";
+                display: block;
+                position: absolute;
+                height: 2px;
+                width: 45%;
+                background-color: $main-color;
+                transition: width .3s ease-in-out;
+                bottom: 0;
+                left: 0;
+            }
         }
         .networks{
             justify-content: flex-start;
@@ -215,8 +244,21 @@
     color: $main-color;
     text-transform: uppercase;
     font-size: 12px;
+    transition: all .1s ease-in;
+    margin-top: 30px;
+    
+    &-wh{
+        margin-right: 15px;
+        &:hover{
+            background-color: $main-color;
+            color: #eeeeee;
+        }
+    }
     &-bc{
         background-color: $main-color;
         color: #fff;
+        &:hover{
+            background-color: darken($color: $main-color, $amount: 10%);
+        }
     }
 }
