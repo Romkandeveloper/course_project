@@ -531,32 +531,33 @@ body {
   width: 100px;
   background-color: #eeeeee;
 }
-.productown .buttonCard {
+
+.buttonCard {
   display: flex;
 }
-.productown .buttonCard:hover button {
+.buttonCard:hover button {
   background-color: #405c89;
 }
-.productown .buttonCard:hover .buttonCard__icon img {
+.buttonCard:hover .buttonCard__icon img {
   transform: rotate(360deg);
 }
-.productown .buttonCard__text, .productown .buttonCard__icon {
+.buttonCard__text, .buttonCard__icon {
   transition: 0.3s ease-in;
   cursor: pointer;
   outline: none;
   background-color: #48689a;
   color: #fff;
 }
-.productown .buttonCard__text {
+.buttonCard__text {
   padding: 10px 25px;
   margin-right: 1px;
   font-weight: 300;
 }
-.productown .buttonCard__icon {
+.buttonCard__icon {
   width: 40px;
   overflow: hidden;
 }
-.productown .buttonCard__icon img {
+.buttonCard__icon img {
   transition: transform 0.5s ease-in-out;
   max-width: 100%;
   object-position: center;

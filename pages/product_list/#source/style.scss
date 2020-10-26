@@ -140,35 +140,35 @@
             background-color: #eeeeee;
         }
     }
-    .buttonCard{
-        &:hover button{
-            background-color: darken($color: $main-color, $amount: 5%);
-        }
-        &:hover  .buttonCard__icon img{
-            transform: rotate(360deg);
-        }
-        display: flex;
-        &__text, &__icon{
-            transition: .3s ease-in;
-            cursor: pointer;
-            outline: none;
-            background-color: $main-color;
-            color: #fff;
-        }
-        &__text{
-            padding: 10px 25px;
-            margin-right: 1px;
-            font-weight: 300;
-        }
-        &__icon{
-           width: 40px;
-           overflow: hidden;
-           img{
-               transition: transform .5s ease-in-out;
-               max-width: 100%;
-               object-position: center;
-               object-fit: contain;
-           }
-        } 
+}
+.buttonCard{
+    &:hover button{
+        background-color: darken($color: $main-color, $amount: 5%);
     }
+    &:hover  .buttonCard__icon img{
+        transform: rotate(360deg);
+    }
+    display: flex;
+    &__text, &__icon{
+        transition: .3s ease-in;
+        cursor: pointer;
+        outline: none;
+        background-color: $main-color;
+        color: #fff;
+    }
+    &__text{
+        padding: 10px 25px;
+        margin-right: 1px;
+        font-weight: 300;
+    }
+    &__icon{
+       width: 40px;
+       overflow: hidden;
+       img{
+           transition: transform .5s ease-in-out;
+           max-width: 100%;
+           object-position: center;
+           object-fit: contain;
+       }
+    } 
 }
