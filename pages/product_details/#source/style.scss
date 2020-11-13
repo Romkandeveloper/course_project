@@ -3,6 +3,8 @@
 @import "../../scss/libs";
 @import "../../scss/base";
 @import "../../scss/main";
+@import "../../scss/logos";
+@import "../../scss/footer";
 
 .about{
     border-bottom: 2px solid #eeeeee;
@@ -18,6 +20,10 @@
         list-style: none;
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 600px){
+            justify-content: space-around;
+        }
     }
     &__category a{
         color: #eeeeee;
@@ -25,6 +31,14 @@
         font-weight: 700;
         text-transform: uppercase;
         display: inline-block;
+
+        @media screen and (max-width: 600px){
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 400px){
+            font-size: 10px;
+        }
     }
     &__text{
         line-height: 1.3rem;
@@ -34,6 +48,10 @@
     }
     &__text-wrapper{
         margin: 35px 0 70px 0;
+
+        @media screen and (max-width: 600px){
+            margin: 20px 0 50px 0;
+        }
     }
 }
 
@@ -42,6 +60,11 @@
         height: 15px;
         background-color: #eeeeee;
         margin-bottom: 50px;
+
+        @media screen and (max-width: 600px){
+            height: 10px;
+            margin-bottom: 40px;
+        }
     }
     &__scale:first-child &__current-scale{
         width: 70%;
@@ -69,6 +92,11 @@
 .commodity{
     display: flex;
     margin: 0 -15px;
+    
+    @media screen and (max-width: 900px){
+        flex-wrap: wrap;
+    }
+    
     &__photos, &__info{
         flex-grow: 1;
         padding: 0 15px;
@@ -79,6 +107,10 @@
             max-width: 25%;
             height: auto;
             margin: 0 auto;
+
+            @media screen and (max-width: 500px){
+                transform: rotate(-90deg);
+            }
         }
         display: flex;
         align-items: center;
@@ -88,11 +120,24 @@
     &__info{
         padding-top: 40px;
         max-width: 50%;
+
+        @media screen and (max-width: 900px){
+            max-width: none;
+        }
+
+        @media screen and (max-width: 500px){
+            padding-top: 20px;
+        }
+        
     }
     &__cost{
         color: $main-color;
         font-weight: 700;
         font-size: 40px;
+
+        @media screen and (max-width: 500px){
+            font-size: 30px;
+        }
     }
     &__name{
         margin-top: 10px;
@@ -101,6 +146,11 @@
         color: #3c4852;
         padding: 10px 0;
         border-bottom: 2px solid #eeeeee;
+
+        @media screen and (max-width: 500px){
+            font-size: 16px;
+            margin-top: 5px;
+        }
     }
     &__description{
         text-align: justify;
@@ -108,6 +158,11 @@
         font-weight: 300;
         color: #424c55;
         margin-top: 35px;
+
+        @media screen and (max-width: 500px){
+            margin-top: 20px;
+            font-size: 12px;
+        }
     }
 
     &__photos{
@@ -115,6 +170,11 @@
         grid-gap: 15px;
         grid-template-columns: 120px repeat(4, 1fr);
         grid-template-rows: repeat(3, 170px) 70px;
+
+        @media screen and (max-width: 500px){
+            grid-template-columns: repeat(4, 1fr);
+        }
+
         &-item{
             &_active{
                 outline: 1px solid #000000;
@@ -130,6 +190,11 @@
                 grid-row: 1 / -1;
                 grid-column: 2 / -1;
                 position: relative;
+
+                @media screen and (max-width: 500px){
+                    grid-column: 1 / -1;
+                }
+
                 &::before, &::after{
                     cursor: pointer;
                     position: absolute;
@@ -166,6 +231,11 @@
    
     &__share{
         margin-top: 40px;
+
+        @media screen and (max-width: 500px){
+            margin-top: 20px;
+        }
+
         &-title{
             display: inline-block;
             padding: 8px 0;
@@ -214,6 +284,12 @@
     font-size: 12px;
     transition: all .1s ease-in;
     margin-top: 30px;
+
+    @media screen and (max-width: 500px){
+        font-size: 10px;
+        padding: 15px 30px;
+        margin-top: 15px;
+    }
     
     &-wh{
         margin-right: 15px;

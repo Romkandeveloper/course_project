@@ -1,0 +1,45 @@
+.logos{
+    background-color: #eeeeee;
+    padding: 60px 15px;
+    position: relative;
+
+    @media screen and (max-width: 900px){
+        padding: 40px 15px;
+    }
+
+    &__wrapper{
+        display: flex;
+        overflow-x: hidden;
+    }
+    &__container{
+        flex-shrink: 0;
+        width: 20%;
+        padding: 0 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 900px){
+            width: 33.3%;
+        }
+        @media screen and (max-width: 500px){
+            width: 50%;
+            padding: 0 25px;
+        }       
+    }
+    &__img{
+        width: 75%;
+        object-fit: cover;
+        transition: transform .3s ease-in-out;
+
+        @media screen and (max-width: 900px){
+            width: 60%;
+        }
+        @media screen and (max-width: 600px){
+            width: 100%;
+        }
+        @media screen and (max-width: 500px){
+            width: 70%;
+        }
+    }
+}

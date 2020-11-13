@@ -3,173 +3,8 @@
 @import "../../scss/libs";
 @import "../../scss/base";
 @import "../../scss/main";
-
-.search{
-    margin-top: 15px;
-    border-bottom: 2px solid #9aa6b9;
-    align-self: center;
-    &__input{
-        width: 280px;
-        background-color: transparent;
-        outline: none;
-        color: #fff;
-        font-weight: 300;
-        padding: 2px 0;
-        &::placeholder{
-            color: #fff;  
-        }
-    }
-    &__btn{
-        background-color: transparent;
-        color: #9aa6b9;
-        cursor: pointer;
-    }
-}
-.header{
-    background-color: $main_color;
-    padding: 10px 0;
-    &__wrapper{
-        display: flex;
-    }
-    &__centerWrapper{
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    &__menu{
-        padding: 0 35px;
-        color: #fff;
-        font-weight: 300;
-        font-size: 14px;
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
-        &Item{
-            display: inline-block;
-        }
-    }
-    &__feedback{
-        margin-bottom: 15px;
-        &Item{
-            i{
-                margin-right: 7px;
-            }
-            color: #fff;
-            font-size: 12px;
-            font-weight: 300;
-            margin-right: 25px;
-        }
-    }
-    &__set{
-        list-style: none;
-        &Item{
-            margin-left: 25px;
-            display: inline-block;
-            color: #fff;
-            font-weight: 300;
-            font-size: 12px;
-            &:first-child{
-                margin-left: 0;
-            }
-        }
-    }
-    &__rightWrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-      
-    }
-}
-
-
-
-.dropdown{
-    &__btn{
-        i{
-            margin-left: 5px;
-        }
-        position: relative;
-        cursor: pointer;
-        font-weight: inherit;
-        font-size: inherit;
-        color: inherit;
-        outline: none;
-        background-color: transparent ;
-        &:hover .dropdown__list{
-            display: block;
-        }
-    }
-    &__list{
-        position: absolute;
-        top: 150%;
-        left: 0;
-        display: none;
-        list-style: none;
-        &Item{
-            display: block;
-            padding: 5px 10px;
-            background-color: #eeeeee;
-        }
-    }
-}
-
-.cart{
-    a{
-        display: block;
-    }
-    display: flex;
-    color: #fff;
-    align-items: center;
-    &__icon{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        border: 2px solid currentColor;
-        font-size: 18px;
-        position: relative;
-        &::after{
-            top: 0;
-            right: 0;
-            transform: translate(30%,-20%);
-            border-radius: 50%;
-            line-height: 100%;
-            text-align: center;
-            padding: 3px;
-            position: absolute;
-            content: "5";
-            display: block;
-            width: 18px;
-            height: 18px;
-            background-color: #fff;
-            color: $main_color;
-            font-size: 13px;
-        }
-    }
-    &__cost{
-        margin-left: 15px;
-    }
-}
-
-.logoS{
-    font-family: 'Oswald';
-    line-height: 30px;
-    display: inline-block;
-    color: #00cdc6;
-    padding: 3px 23px 8px 23px;
-    border: 3px solid currentColor;
-    font-size: 30px;
-    font-weight: 700;
-}
-
-
-
-
-
+@import "../../scss/footer";
+@import "../../scss/logos";
 .greetSection{
     height: 100vh;
 }
@@ -180,8 +15,17 @@
     align-items: center;
     &__wrapper{
         width: 100%;
-        padding-left: 180px;
+        padding: 0 10%;
         position: relative;
+
+        @media screen and (max-width: 900px){
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px){
+            padding: 0;
+        }
+
         &::before, &::after{
             width: 1em;
             position: absolute;
@@ -193,15 +37,27 @@
             line-height: 25px;
             text-transform: uppercase;
             cursor: pointer;
+
+            @media screen and (max-width: 600px){
+                display: none;
+            }
         }
         &::before{
             content: "p r e v";
             left: 0;
+
+            @media screen and (max-width: 900px){
+                left: 20px;
+            }
             
         }
         &::after{
             content: "n e x t";
             right: 0;
+
+            @media screen and (max-width: 900px){
+                right: 20px;
+            }
         }
     }
     &__description{
@@ -213,13 +69,25 @@
         font-size: 50px;
         font-weight: 700;
         line-height: 55px;
+
+        @media screen and (max-width: 900px){
+            font-size: 35px;
+        }
     }
     &__subtitle{
         font-size: 40px;
         font-weight: 400;
+
+        @media screen and (max-width: 900px){
+            font-size: 25px;
+        }
     }
     &__button{
         margin-top: 75px;
+
+        @media screen and (max-width: 900px){
+            margin-top: 30px;
+        }
     }
 }
 
@@ -230,11 +98,15 @@
     margin: 0 -16px;
 
     &__item{
-        min-width: 50%;
+        min-width: 350px;
         padding: 0 16px;
         flex-grow: 1;
         display: flex;
         margin-bottom: 16px;
+
+        @media screen and (max-width: 400px){
+           min-width: 0;
+        }
     }
     &__wrapper{
         border: 5px solid #eeeeee;
@@ -251,10 +123,21 @@
         font-size: 12px;
         font-weight: 400;
         line-height: 30px;
+
+        @media screen and (max-width: 690px){
+            font-size: 20px;
+        }
+        @media screen and (max-width: 400px){
+            font-size: 12px;
+        }
     }
     &__item:first-child &__description{
         margin-left: auto;
         text-align: center;
+
+        @media screen and (max-width: 400px){
+            margin: auto;
+        }
     }
     &__item:last-child &__subwrapper{
         border: 0;
@@ -275,20 +158,50 @@
     }
     .special{
         font-size: 37px;
+        @media screen and (max-width: 400px){
+            font-size: 20px;
+        }
     }
 }
 
 .advantage{
     margin-top: 45px;
+
+    @media screen and (max-width: 900px){
+        margin-top: 0;
+    }
+
     &__wrapper{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 900px){
+            justify-content: center;
+        }
     }
     &__item{
         position: relative;
         padding-left: 60px;
         max-width: 350px;
+
+        @media screen and (max-width: 900px){
+            width: 100%;
+            max-width: 50%;
+            text-align: center;
+            padding: 0 30px;
+            padding-top: 40px;
+            margin-top: 30px;
+        }
+        @media screen and (max-width: 500px){
+            &:first-child{
+                margin-top: 15px;
+            }
+            max-width: none;
+        }
     }
+
+    
     &__title{
         font-size: 14px;
         line-height: 25px;
@@ -306,6 +219,13 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
+
+        @media screen and (max-width: 900px){
+            top: 0;
+            transform: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
 
@@ -317,25 +237,37 @@
         align-items: flex-end;
         position: relative;
 
+        @media screen and (max-width: 900px){
+            align-items: center;
+        }
+
+        @media screen and (max-width: 600px){
+            padding: 0;
+        }
+
         &::after, &::before{
             cursor: pointer;
             color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             position: absolute;
             width: 35px;
             height: 35px;
             background-color: $main_color;
             top: 50%;
             transform: translateY(-50%);
+            text-align: center;
+            font-size: 24px;
+            line-height: 35px;
+
+            @media screen and (max-width: 900px){
+                display: none;
+            }
         }
         &::before{
-            content: "<-";
+            content: "\23F4";
             left: 0;
         }
         &::after{
-            content: "->";
+            content: "\23F5";
             right: 0;
         }
     }
@@ -353,10 +285,18 @@
         font-size: 40px;
         font-weight: 700;
         text-transform: uppercase;
+        
+        @media screen and (max-width: 600px){
+            font-size: 30px;
+        }
     }
     &__subtitle{
         font-size: 24px;
         letter-spacing: 0.6px;
+
+        @media screen and (max-width: 600px){
+            font-size: 18px;
+        }
     }
     &__button{
         margin-top: 35px;

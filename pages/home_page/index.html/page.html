@@ -1,101 +1,16 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-<title>weshop</title>
+<title>Weshop</title>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1.0">
 <link rel="stylesheet" href="../style.css">
+<link rel="shortcut icon" href="/pages/favicon.png" type="image/png">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
 </head>
-<body> 
-<header class="header">
-<div class="container">
-<div class="header__wrapper">
-<div class="header__leftWrapper">
-<div class="header__feedback">
-<a class="header__feedbackItem" href="#"><i class="fas fa-phone-alt"></i>(00)-123-456-789</a>
-<a class="header__feedbackItem" href="#"><i class="far fa-envelope"></i>weshop@gmail.com</a>
-</div>
-<a class="logoS" href="#">weshop</a>
-</div>
-<div class="header__centerWrapper">
-<form class="search">
-<input class="search__input" type="text" placeholder="Search here...">
-<button class="search__btn" type="submit"><i class="fas fa-search"></i></button>
-</form>
-<ul class="header__menu">
-<li class="header__menuItem"><a href="#">Home</a></li>
-<li class="header__menuItem">
-<div class="dropdown">
-<button class="dropdown__btn">English<i class="fas fa-angle-down"></i></button>
-<ul class="dropdown__list">
-<li class="dropdown__listItem">Russian</li>
-<li class="dropdown__listItem">Japan</li>
-</ul>
-</div>
-</li>
-<li class="header__menuItem">
-<div class="dropdown">
-<button class="dropdown__btn">English<i class="fas fa-angle-down"></i></button>
-<ul class="dropdown__list">
-<li class="dropdown__listItem">Russian</li>
-<li class="dropdown__listItem">Japan</li>
-</ul>
-</div>
-</li>
-<li class="header__menuItem">
-<div class="dropdown">
-<button class="dropdown__btn">English<i class="fas fa-angle-down"></i></button>
-<ul class="dropdown__list">
-<li class="dropdown__listItem">Russian</li>
-<li class="dropdown__listItem">Japan</li>
-</ul>
-</div>
-</li>
-<li class="header__menuItem">
-<div class="dropdown">
-<button class="dropdown__btn">English<i class="fas fa-angle-down"></i></button>
-<ul class="dropdown__list">
-<li class="dropdown__listItem">Russian</li>
-<li class="dropdown__listItem">Japan</li>
-</ul>
-</div>
-</li>
-<li class="header__menuItem"><a href="#">Blog</a></li>
-<li class="header__menuItem"><a href="#">Contact us</a></li>
-<ul>
-</div>
-<div class="header__rightWrapper">
-<ul class="header__set">
-<li class="header__setItem">
-<div class="dropdown">
-<button class="dropdown__btn">English<i class="fas fa-angle-down"></i></button>
-<ul class="dropdown__list">
-<li class="dropdown__listItem">Russian</li>
-<li class="dropdown__listItem">Japan</li>
-</ul>
-</div>
-</li>
-<li class="header__setItem">
-<div class="dropdown">
-<button class="dropdown__btn">USD<i class="fas fa-angle-down"></i></button>
-<ul class="dropdown__list">
-<li class="dropdown__listItem">рупии</li>
-<li class="dropdown__listItem">чеканная монета</li>
-</ul>
-</div>
-</li>
-<li class="header__setItem"><a href="#">Login</a></li>
-</ul>
-<div class="cart">
-<div class="cart__icon"><i class="fas fa-cart-arrow-down"></i></div>
-<span class="cart__cost">$254</span>
-</div>
-</div>
-</div>
-</div>
-</header>
-<section class="greetSection">
+<body>
+<!--include ../../#modules/header.pug--><section class="greetSection">
 <div class="container">
 <section class="home-slider">
 <div class="home-slider__wrapper">
@@ -278,13 +193,13 @@
 </article>
 <article class="tidings__item">
 <div class="tidings__border"></div>
-</article><article class="tidings__item">
+</article><article class="tidings__item b">
 <div class="tidings__border">
 <div class="tidings__item-wrapper tidings__item-wrapper_white">
 </div>
 </div>
 </article>
-<article class="tidings__item">
+<article class="tidings__item t">
 <div class="tidings__border">
 <div class="tidings__item-wrapper tidings__item-wrapper_transparent">
 <div class="tidings__description">
@@ -299,28 +214,27 @@
 </article></div>
 </section>
 </div>
-</section>
-<section class="section section-gray">
-<div class="container"><section class="logos">
+</section><section class="logos">
+<div class="container">
 <div class="logos__wrapper">
-<a href="#"><img src="../../images/logos/3-layers.png"></a>
-<a href="#"><img src="../../images/logos/a.png"></a>
-<a href="#"><img src="../../images/logos/Group_1.png"></a>
-<a href="#"><img src="../../images/logos/Group_5.png"></a>
-<a href="#"><img src="../../images/logos/ICE_CREAM_BAR.png"></a>
-<a href="#"><img src="../../images/logos/Icon.png"></a>
+<div class="logos__container"><img class="logos__img" src="../../images/logos/Icon.png"></div>
+<div class="logos__container"><img class="logos__img" src="../../images/logos/a.png"></div>
+<div class="logos__container"><img class="logos__img" src="../../images/logos/a.png"></div>
+<div class="logos__container"><img class="logos__img" src="../../images/logos/Group_5.png"></div>
+<div class="logos__container"><img class="logos__img" src="../../images/logos/ICE_CREAM_BAR.png"></div>
+<div class="logos__container"><img class="logos__img" src="../../images/logos/Icon.png"></div>
 </div>
-</section></div>
+</div>
 </section><footer class="footer">
 <div class="container">
 <section class="footer__main">
 <div class="footer__info">
 <div class="footer__data">
-<h1 class="logo">weshop</h1>
+<h1 class="footer__logo">weshop</h1>
 <p class="footer__text">USA most-loved online fashion store featuring new deals.</p><br>
 <p class="footer__text">When it comes to trend, we all love being in it — Seeping every bit of it in WESHOP.com </p>
 </div>
-<div class="links">
+<nav class="links footer__links">
 <h2 class="links__name">SUPPORT</h2>
 <ul class="links__list">
 <li class="links__item"><a href="#">How to Order?</a></li>
@@ -328,24 +242,24 @@
 <li class="links__item"><a href="#">Assistance</a></li>
 <li class="links__item"><a href="#">Delivery</a></li>
 </ul>
-</div>
-<div class="links">
+</nav>
+<nav class="links footer__links">
 <h2 class="links__name">DUTIES</h2>
 <ul class="links__list">
 <li class="links__item"><a href="#">Terms and Conditions</a></li>
 <li class="links__item"><a href="#">Shop Policy</a></li>
 <li class="links__item"><a href="#">Contact Us</a></li>
 </ul>
-</div>
-<div class="links">
+</nav>
+<nav class="links footer__links">
 <h2 class="links__name">instagram feed</h2>
 <ul class="links__list">
-<li class="links__item links__item-img inb"><a href="#"><img src="../../images/instagram_feed/feed1.png"></a></li>
-<li class="links__item links__item-img inb"><a href="#"><img src="../../images/instagram_feed/feed2.png"></a></li>
-<li class="links__item links__item-img inb"><a href="#"><img src="../../images/instagram_feed/feed3.png"></a></li>
-<li class="links__item links__item-img inb"><a href="#"><img src="../../images/instagram_feed/feed4.png"></a></li>
+<li class="links__item  links__item_inline-block"><a href="#"><img src="../../images/instagram_feed/feed1.png"></a></li>
+<li class="links__item  links__item_inline-block"><a href="#"><img src="../../images/instagram_feed/feed2.png"></a></li>
+<li class="links__item  links__item_inline-block"><a href="#"><img src="../../images/instagram_feed/feed3.png"></a></li>
+<li class="links__item  links__item_inline-block"><a href="#"><img src="../../images/instagram_feed/feed4.png"></a></li>
 </ul>
-<div class="cards">
+<div class="cards footer__cards">
 <ul class="cards__list">
 <li class="cards__item"><a href="#"><img src="../../images/cards/card1.png"></a></li>
 <li class="cards__item"><a href="#"><img src="../../images/cards/card2.png"></a></li>
@@ -353,25 +267,17 @@
 <li class="cards__item"><a href="#"><img src="../../images/cards/card4.png"></a></li>
 </ul>
 </div>
+</nav>
 </div>
-</div>
-<div class="networks">
+<div class="networks footer__networks">
 <div class="networks__wrapper">
-<div class="networks__item">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-</div>
-<div class="networks__item">
-<a href="#"><i class="fab fa-twitter"></i></a>
-</div>
-<div class="networks__item">
-<a href="#"><i class="fab fa-instagram"></i></a>
-</div>
-<div class="networks__item">
-<a href="#"><i class="fab fa-youtube"></i></a>
-</div>
-<div class="networks__item">
-<a href="#"><i class="fab fa-google-plus-g"></i></a>
-</div>
+<ul class="networks__list">
+<li class="networks__item"><a class="networks__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li class="networks__item"><a class="networks__link" href="#"><i class="fab fa-twitter"></i></a></li>
+<li class="networks__item"><a class="networks__link" href="#"><i class="fab fa-instagram"></i></a></li>
+<li class="networks__item"><a class="networks__link" href="#"><i class="fab fa-youtube"></i></a></li>
+<li class="networks__item"><a class="networks__link" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+</ul>
 </div>
 </div>
 </section>

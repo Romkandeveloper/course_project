@@ -1,100 +1,18 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>weshop</title>
+        <title>Weshop</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link rel="stylesheet" href="../style.css">
+        <link rel="shortcut icon" href="/pages/favicon.png" type="image/png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     </head>
-    <body> 
-        <header class="header">
-            <div class="container">
-                <div class="header__wrapper">
-                    <div class="header__leftWrapper">
-                        <div class="header__feedback">
-                            <a class="header__feedbackItem" href="#"><i class="fas fa-phone-alt"></i>(00)-123-456-789</a>
-                            <a class="header__feedbackItem" href="#"><i class="far fa-envelope"></i>weshop@gmail.com</a>
-                        </div>
-                        <a class="logoS" href="#">weshop</a>
-                    </div>
-                    <div class="header__centerWrapper">
-                        <form class="search">
-                            <input class="search__input" type="text" placeholder="Search here...">
-                            <button class="search__btn" type="submit"><i class="fas fa-search"></i></button>
-                        </form>
-                        <ul class="header__menu">
-                            <li class="header__menuItem"><a href="#">Home</a></li>
-                            <li class="header__menuItem">
-                                <div class="dropdown">
-                                    <button class="dropdown__btn">English<i class="fas fa-angle-down"></i></button>
-                                    <ul class="dropdown__list">
-                                        <li class="dropdown__listItem">Russian</li>
-                                        <li class="dropdown__listItem">Japan</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="header__menuItem">
-                                <div class="dropdown">
-                                    <button class="dropdown__btn">English<i class="fas fa-angle-down"></i></button>
-                                    <ul class="dropdown__list">
-                                        <li class="dropdown__listItem">Russian</li>
-                                        <li class="dropdown__listItem">Japan</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="header__menuItem">
-                                <div class="dropdown">
-                                    <button class="dropdown__btn">English<i class="fas fa-angle-down"></i></button>
-                                    <ul class="dropdown__list">
-                                        <li class="dropdown__listItem">Russian</li>
-                                        <li class="dropdown__listItem">Japan</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="header__menuItem">
-                                <div class="dropdown">
-                                    <button class="dropdown__btn">English<i class="fas fa-angle-down"></i></button>
-                                    <ul class="dropdown__list">
-                                        <li class="dropdown__listItem">Russian</li>
-                                        <li class="dropdown__listItem">Japan</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="header__menuItem"><a href="#">Blog</a></li>
-                            <li class="header__menuItem"><a href="#">Contact us</a></li>
-                        <ul>
-                    </div>
-                    <div class="header__rightWrapper">
-                        <ul class="header__set">
-                            <li class="header__setItem">
-                                <div class="dropdown">
-                                    <button class="dropdown__btn">English<i class="fas fa-angle-down"></i></button>
-                                    <ul class="dropdown__list">
-                                        <li class="dropdown__listItem">Russian</li>
-                                        <li class="dropdown__listItem">Japan</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="header__setItem">
-                                <div class="dropdown">
-                                    <button class="dropdown__btn">USD<i class="fas fa-angle-down"></i></button>
-                                    <ul class="dropdown__list">
-                                        <li class="dropdown__listItem">рупии</li>
-                                        <li class="dropdown__listItem">чеканная монета</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="header__setItem"><a href="#">Login</a></li>
-                        </ul>
-                        <div class="cart">
-                            <div class="cart__icon"><i class="fas fa-cart-arrow-down"></i></div>
-                            <span class="cart__cost">$254</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <body>
+        //- Include header
+        //include ../../#modules/header.pug
+
         <section class="greetSection">
             <div class="container">
                 <section class="home-slider">
@@ -308,13 +226,9 @@
             </div>
         </section>
 
-        <section class="section section-gray">
-            <div class="container">
-                //- Include logos
-                include ../../#modules/logos.pug
-            </div>
-        </section>
-
+        //- Include logos
+        include ../../#modules/logos.pug
+       
         //- Include footer
         include ../../#modules/footer.pug
     </body>

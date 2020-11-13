@@ -3,16 +3,28 @@
 @import "../../scss/libs";
 @import "../../scss/base";
 @import "../../scss/main";
+@import "../../scss/logos";
+@import "../../scss/footer";
 
 .products-section{
     display: flex;
 }
 .filter{
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    overflow-y: scroll;
     margin-right: 30px;
     width: 100%;
+    padding-right: 15px;
     max-width: 200px;
     flex-shrink: 0;
     color: #3c4852;
+
+    @media screen and (max-width: 900px){
+        display: none;
+    }
+
     &__category{
         margin-top: 25px;
         &:first-child{
@@ -82,19 +94,59 @@
     }
 }
 .productown{
+    &__link{
+        display: inline-block;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: 600px){
+            text-align: center;
+        }
+    }
+    &__button-wrapper{
+        @media screen and (max-width: 600px){
+            display: flex;
+            justify-content: center;
+        }
+    }
     display: flex;
     padding: 35px 0;
     border-bottom: 1px solid #eeeeee;
+
+    @media screen and (max-width: 600px){
+        flex-direction: column;
+    }
+
+    &:hover .productown__title{
+        color: $main-color;
+    }
     &__photo{
+        &:hover img{
+            transform: scale(1.05);
+        }
+        overflow: hidden;
         flex-shrink: 0;
         margin-right: 35px;
         width: 230px;
+
+        @media screen and (max-width: 600px){
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
         img{
+            transition: transform .3s ease-in;
             width: 100%;
             max-width: 100%;
             height: auto;
             max-height: 340px;
             display: block;
+
+            @media screen and (max-width: 600px){
+                max-height: none;
+            }
         }
     }
     &__data{
@@ -115,12 +167,18 @@
     &__availavlity{
         font-size: 13px;
         margin-right: 5px;
+
         &-status{
             text-transform: uppercase;
             color: $main-color;
             font-size: 13px;
+
+            @media screen and (max-width: 600px){
+                text-align: center;
+            }
         }
     }
+    
     &__description{
         flex-grow: 1;
         margin-top: 20px;
@@ -138,8 +196,23 @@
             height: 1px;
             width: 100px;
             background-color: #eeeeee;
+
+            @media screen and (max-width: 600px){
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        @media screen and (max-width: 900px){
+            text-align: justify;
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 600px){
+            text-align: center;
         }
     }
+    
 }
 .buttonCard{
     &:hover button{
@@ -148,7 +221,8 @@
     &:hover  .buttonCard__icon img{
         transform: rotate(360deg);
     }
-    display: flex;
+    
+    display: inline-flex;
     &__text, &__icon{
         transition: .3s ease-in;
         cursor: pointer;

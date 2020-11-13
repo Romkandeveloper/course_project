@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    //- Include header
+    //include ../../#modules/header.pug
+
     //- Include subheader
     include ../../#modules/subheader.pug
 
@@ -66,15 +72,21 @@
                 </aside>
                 <main class="catalog">
                     <header class="catalog__header">
-                    a sdasdas
+                    span products 
                     </header>
                     <section class="catalog__content">
                         <article class="productown">
-                            <div class="productown__photo"><img src="../../images/products/jeans.jpg"></div>
+                            <div class="productown__photo">
+                                <a class="productown__link" href="#">
+                                    <img src="../../images/products/jeans.jpg">
+                                </a>
+                            </div>
                             <div class="productown__data">
-                                <h3 class="productown__title">Lorem ipsum dolor sit</h3>
-                                <h5 class="productown__cost">$289</h5>
-                                <span><span class="productown__availavlity">Availavlity:</span><a class="productown__availavlity-status" href="#">IN STOCK</a></span>
+                                <div class="productown__info">
+                                    <h3 class="productown__title"><a href="#">Lorem ipsum dolor sit</a></h3>
+                                    <h5 class="productown__cost">$289</h5>
+                                    <span class="productown__availavlity-wrapper"><span class="productown__availavlity">Availavlity:</span><a class="productown__availavlity-status" href="#">IN STOCK</a></span>
+                                </div>
                                 <p class="productown__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita soluta earum est ad id similique quasi, dolorum fugiat perspiciatis assumenda, ea, officiis iure impedit reprehenderit amet veniam voluptatum! Magnam?Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <div class="productown__button-wrapper">
                                     <div class="buttonCard">
@@ -84,11 +96,17 @@
                             </div>
                         </article>
                         <article class="productown">
-                            <div class="productown__photo"><img src="../../images/products/jeans2.jpg"></div>
+                            <div class="productown__photo">
+                                <a class="productown__link" href="#">
+                                    <img src="../../images/products/jeans2.jpg">
+                                </a>
+                            </div>
                             <div class="productown__data">
-                                <h3 class="productown__title">Lorem ipsum dolor sit</h3>
-                                <h5 class="productown__cost">$289</h5>
-                                <span><span class="productown__availavlity">Availavlity:</span><a class="productown__availavlity-status" href="#">IN STOCK</a></span>
+                                <div class="productown__info">
+                                    <h3 class="productown__title"><a href="#">Lorem ipsum dolor sit</a></h3>
+                                    <h5 class="productown__cost">$289</h5>
+                                    <span class="productown__availavlity-wrapper"><span class="productown__availavlity">Availavlity:</span><a class="productown__availavlity-status" href="#">IN STOCK</a></span>
+                                </div>
                                 <p class="productown__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita soluta earum est ad id similique quasi, dolorum fugiat perspiciatis assumenda, ea, officiis iure impedit reprehenderit amet veniam voluptatum! Magnam?Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <div class="productown__button-wrapper">
                                     <div class="buttonCard">
@@ -98,11 +116,17 @@
                             </div>
                         </article>
                         <article class="productown">
-                            <div class="productown__photo"><img src="../../images/products/jeans3.jpg"></div>
+                            <div class="productown__photo">
+                                <a class="productown__link" href="#">
+                                    <img src="../../images/products/jeans3.jpg">
+                                </a>
+                            </div>
                             <div class="productown__data">
-                                <h3 class="productown__title">Lorem ipsum dolor sit</h3>
-                                <h5 class="productown__cost">$289</h5>
-                                <span><span class="productown__availavlity">Availavlity:</span><a class="productown__availavlity-status" href="#">IN STOCK</a></span>
+                                <div class="productown__info">
+                                    <h3 class="productown__title"><a href="#">Lorem ipsum dolor sit</a></h3>
+                                    <h5 class="productown__cost">$289</h5>
+                                    <span class="productown__availavlity-wrapper"><span class="productown__availavlity">Availavlity:</span><a class="productown__availavlity-status" href="#">IN STOCK</a></span>
+                                </div>
                                 <p class="productown__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita soluta earum est ad id similique quasi, dolorum fugiat perspiciatis assumenda, ea, officiis iure impedit reprehenderit amet veniam voluptatum! Magnam?Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <div class="productown__button-wrapper">
                                     <div class="buttonCard">
@@ -112,11 +136,17 @@
                             </div>
                         </article>
                         <article class="productown">
-                            <div class="productown__photo"><img src="../../images/products/jeans4.jpg"></div>
+                            <div class="productown__photo">
+                                <a class="productown__link" href="#">
+                                    <img src="../../images/products/jeans4.jpg">
+                                </a>
+                            </div>
                             <div class="productown__data">
-                                <h3 class="productown__title">Lorem ipsum dolor sit</h3>
-                                <h5 class="productown__cost">$289</h5>
-                                <span><span class="productown__availavlity">Availavlity:</span><a class="productown__availavlity-status" href="#">IN STOCK</a></span>
+                                <div class="productown__info">
+                                    <h3 class="productown__title"><a href="#">Lorem ipsum dolor sit</a></h3>
+                                    <h5 class="productown__cost">$289</h5>
+                                    <span class="productown__availavlity-wrapper"><span class="productown__availavlity">Availavlity:</span><a class="productown__availavlity-status" href="#">IN STOCK</a></span>
+                                </div>
                                 <p class="productown__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita soluta earum est ad id similique quasi, dolorum fugiat perspiciatis assumenda, ea, officiis iure impedit reprehenderit amet veniam voluptatum! Magnam?Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <div class="productown__button-wrapper">
                                     <div class="buttonCard">
@@ -126,11 +156,17 @@
                             </div>
                         </article>
                         <article class="productown">
-                            <div class="productown__photo"><img src="../../images/products/product_item/product2.jpg"></div>
+                            <div class="productown__photo">
+                                <a class="productown__link" href="#">
+                                    <img src="../../images/products/product_item/product2.jpg">
+                                </a>
+                            </div>
                             <div class="productown__data">
-                                <h3 class="productown__title">Lorem ipsum dolor sit</h3>
-                                <h5 class="productown__cost">$289</h5>
-                                <span><span class="productown__availavlity">Availavlity:</span><a class="productown__availavlity-status" href="#">IN STOCK</a></span>
+                                <div class="productown__info">
+                                    <h3 class="productown__title"><a href="#">Lorem ipsum dolor sit</a></h3>
+                                    <h5 class="productown__cost">$289</h5>
+                                    <span class="productown__availavlity-wrapper"><span class="productown__availavlity">Availavlity:</span><a class="productown__availavlity-status" href="#">IN STOCK</a></span>
+                                </div>
                                 <p class="productown__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita soluta earum est ad id similique quasi, dolorum fugiat perspiciatis assumenda, ea, officiis iure impedit reprehenderit amet veniam voluptatum! Magnam?Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <div class="productown__button-wrapper">
                                     <div class="buttonCard">
@@ -143,9 +179,6 @@
                 </main>
             </section>
 
-
-
-
             <section class="tidings">
                 <div class="tidings__wrapper">
                     //- Include newsletter
@@ -153,14 +186,11 @@
                 </div>
             </section>
         </div>
+
     </section>
 
-    <section class="section section-gray">
-        <div class="container">
-            //- Include logos
-            include ../../#modules/logos.pug
-        </div>
-    </section>
+    //- Include logos
+    include ../../#modules/logos.pug
 
     //- Include footer
     include ../../#modules/footer.pug
